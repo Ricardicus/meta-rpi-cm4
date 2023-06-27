@@ -85,14 +85,15 @@ has the IP address 192.168.100.100 on our network. We copy the file like this:
 
 ```bash
 # After entering the password, the file is sent to the home directory
-scp [FILE] user@192.168.100.100:/home/user/helloworld
+scp ./tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/hello-world/0.1-r0/image/usr/bin/helloworld user@192.168.100.100:/home/user/helloworld
 ```
 
 We use ssh to enter the device shell. In here, we can run the program:
 
 ```bash
 ./helloworld
-# outputs: 
+# outputs:
+# Hello, World!
 ```
 
 
