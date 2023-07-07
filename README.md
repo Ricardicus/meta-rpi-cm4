@@ -96,5 +96,20 @@ We use ssh to enter the device shell. In here, we can run the program:
 # Hello, World!
 ```
 
+# Building a toolchain
 
+Having done the steps above, the target meta-toolchain is available to create a toolchain installer.
 
+```bash
+bitbake meta-toolchain
+```
+
+The resulting toolchain script is found here:
+
+```bash
+$ ls tmp/deploy/sdk
+poky-glibc-x86_64-meta-toolchain-cortexa7t2hf-neon-vfpv4-toolchain-2.6.4.host.manifest
+poky-glibc-x86_64-meta-toolchain-cortexa7t2hf-neon-vfpv4-toolchain-2.6.4.sh
+poky-glibc-x86_64-meta-toolchain-cortexa7t2hf-neon-vfpv4-toolchain-2.6.4.target.manifest
+poky-glibc-x86_64-meta-toolchain-cortexa7t2hf-neon-vfpv4-toolchain-2.6.4.testdata.json
+```
