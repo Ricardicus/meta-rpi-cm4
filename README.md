@@ -104,7 +104,7 @@ Having done the steps above, the target meta-toolchain is available to create a 
 bitbake meta-toolchain
 ```
 
-The resulting toolchain script is found here:
+The resulting toolchain script is found under the build folder here:
 
 ```bash
 $ ls tmp/deploy/sdk
