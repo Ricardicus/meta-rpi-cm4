@@ -101,8 +101,10 @@ We use ssh to enter the device shell. In here, we can run the program:
 Having done the steps above, the target meta-toolchain is available to create a toolchain installer.
 
 ```bash
-bitbake meta-toolchain
+bitbake example-toolchain
 ```
+
+This will build a customizable toolchain. Add your dependencies that you want included into the environment by appending the TOOLCHAIN_TARGET_TASK variable in recipes-toolchain/toolchain/example-toolchain.bb .
 
 The resulting toolchain script is found under the build folder here:
 
